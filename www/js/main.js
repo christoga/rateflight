@@ -25,7 +25,7 @@ function getFlightInfo() {
 	var dataComponentsArrayLength = dataComponentsArray.length;
 	for (var i = 0; i < dataComponentsArrayLength; i++) {
 	    // alert(dataComponentsArray[i]);
-	    var flightInfoRef = firebase.database().ref('flight_info/' + modifiedCode + '/' + dataComponentsArray[i]);
+	    var flightInfoRef = firebase.database().ref('flightInfo/' + modifiedCode + '/' + dataComponentsArray[i]);
 		flightInfoRef.on('value', function(snapshot) {
 		  // alert(snapshot.val());
 		  // document.getElementById(dataComponentsArray[i]).innerHTML = snapshot.val();
