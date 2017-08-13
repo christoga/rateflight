@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<br>
+		<center><input type="text" class="form-control" placeholder="Kode Pesawat" id="airplane_code"></center>
+		<br>
+		<div align="left">
+		<!-- 'arrival', 'departure', 'from', 'to', 'weather' -->
+			<span class="datachild">Waktu Keberangkatan : <span id="arrival"></span></span><br>
+			<span class="datachild">Waktu Estimasi Kedatangan : <span id="departure"></span></span><br>
+			<span class="datachild">Asal Kota : <span id="from"></span></span><br>
+			<span class="datachild">Tujuan Kota : <span id="to"></span></span><br>
+			<span class="datachild">Estimasi Cuaca : <span id="weather"></span></span>
+		</div>
+		<br><br>
+		<center><button class="btn btn-primary btn-lg" onclick="getFlightInfo()">Check</button></center>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
